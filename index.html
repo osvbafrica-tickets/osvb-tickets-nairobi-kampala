@@ -15,6 +15,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+    
       height: 100vh;
 
       /* image */
@@ -27,7 +28,7 @@
       color: #f1f5f9;
       text-align: center;
     
-    /* for pc remove this on github *
+     /*for pc remove this on github *//*
       background: 
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
          url("D:/Mr_one1/IT work/work/OSVB-Website/background.gif") 
@@ -39,6 +40,7 @@
     
       */}
     .card {
+      align-content: center;
       background: rgba(255, 255, 255, 0.15);
       backdrop-filter: blur(10px);
       box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
@@ -51,14 +53,16 @@
 
     h1 {
       font-size: 1.6rem;
+      font-weight: bold;
       margin-bottom: 1.5rem;
       color: #fff;
     }
 
     a {
+      
       display: block;
-      width: 100%;
-      margin: 10px 0;
+      width: 50%;
+      margin: 10px auto;
       padding: 14px;
       text-decoration: none;
       font-size: 1.1rem;
@@ -66,11 +70,13 @@
       background-color: #2563eb;
       border-radius: 8px;
       transition: all 0.3s ease;
+      align-items: center;
     }
 
     a:hover {
-      background-color: #1d4ed8;
+      background-color: lch(47.04% 90.47 295.37);
       transform: scale(1.02);
+      
     }
 
     footer {
@@ -93,23 +99,27 @@
 </head>
 <body>
   <div class="card">
-    <h1>Welcome to OSVB Africa Tickets</h1>
+    <h1 >Welcome to OSVB Africa Tickets</h1>
 
     <!-- links  -->
+
     <a href="https://oldschoolandvibebrunchafrica.hustlesasa.shop/products/6957faecad2b1451671b2dfd">MOMBASA EVENT</a>
     <a href="https://oldschoolandvibebrunchafrica.hustlesasa.shop/products/6957f938ad2b1451671b2de1">NAIROBI EVENT</a>
     <a href="https://mookh.com/event/old-school-and-vibe-brunch-kampala">KAMPALA EVENT</a>
+    <a id="MERU" href="">MERU EVENT</a>
 
     <footer>Powered by Old School and Vibe Brunch Africa</footer>
   </div>
 
-  <!-- <script>
-    const kampalaLink = document.getElementById('KAMPALA');
-    kampalaLink.addEventListener('click', function(e) {
+  <script>
+
+    const MeruLink = document.getElementById('MERU');
+    MeruLink.addEventListener('click', function(e) {
       e.preventDefault();
-      alert("Event will be available soon");
+      alert("Event tickets will be available soon");
     });
-  </script> -->
+
+  </script> 
 </body>
 </html>
 
